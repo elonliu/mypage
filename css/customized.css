@@ -1,0 +1,8 @@
+li.contact {
+    list-style-type: none;
+    display: block;
+}
+
+li.contact moreline {
+    padding-left: 2em;
+}
