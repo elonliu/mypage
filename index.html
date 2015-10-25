@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Yilong Liu</title>
+    <title>Yilong Liu's Homepage</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -22,6 +22,13 @@
     <!-- More customization -->
     <link href="css/customized.css" rel="stylesheet"/>
 
+    <!-- Fixed-navbar adjustment -->
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,9 +37,9 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="padding-top: 50px;">
 <!-- Top navbar -->
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Yilong Liu</a>
@@ -49,56 +56,59 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-responsive" src="img/head.png" alt="My portrait" style="max-width:75%">
-            </div>
-            <div class="col-sm-8">
-                <h1>Yilong Liu
-                    <small>(刘一龙)</small>
-                </h1>
-                <h2>Ph.D. Student on Computer Graphics</h2>
-                <div style="alignment: bottom">
-                <a href="#about" class="btn btn-info btn-lg">See More</a>
-                <a href="#contact" class="btn btn-success btn-lg">Contact Me</a>
-                    </div>
-            </div>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="header_title">Yilong Liu (刘一龙)</h1>
+        <h2 class="header_subtitle">Ph.D. Student on Computer Graphics</h2>
+        <div class="header_btnset">
+        <a href="#about" class="btn btn-info btn-lg">See More</a>
+        <a href="#contact" class="btn btn-success btn-lg">Contact Me</a>
         </div>
     </div>
 </div>
 
 <div id="about" class="container">
     <hr>
-    <h2>About Me</h2>
-    <p>
-        I'm currently a Ph.D. student at
-        <a href="http://www.castu.tsinghua.edu.cn/publish/cas/index.html" target="_blank">
-            the Institute for Advanced Study</a>,
-        <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
-            Tsinghua University</a>.
-        I'm doing research in Computer Graphics, majorly focused on facial animation.
-        It's currently the fourth year of my Ph.D. career. My adviser is
-        <a href="http://research.microsoft.com/en-us/people/bainguo/default.aspx" target="_blank">
-            Prof. Baining Guo</a>, and I'm mentored by
-        <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">
-            Xin Tong</a> in the
-        <a href="http://msra.cn/zh-cn/connections/talents/joint-phd/default.aspx" target="_blank">
-            Joint Ph.D. Program</a> with
-        <a href="http://research.microsoft.com/en-us/labs/asia/" target="_blank">
-            Microsoft Research Asia</a>.
-    </p>
-    <p>
-        I received my B.S. Degree in Automation and Second B.S. Degree in Economics from
-        <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
-            Tsinghua University</a> in 2012.
-    </p>
+    <div class="section">
+        <h3 class="section_title">About Me</h3>
+    <div class="row">
+        <div class="col-sm-8">
+            <p class="section_text">
+                I'm currently a Ph.D. student at
+                <a href="http://www.castu.tsinghua.edu.cn/publish/cas/index.html" target="_blank">
+                    the Institute for Advanced Study</a>,
+                <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
+                    Tsinghua University</a>.
+                I'm doing research in Computer Graphics, majorly focused on facial animation.
+                It's currently the fourth year of my Ph.D. career. My adviser is
+                <a href="http://research.microsoft.com/en-us/people/bainguo/default.aspx" target="_blank">
+                    Prof. Baining Guo</a>, and I'm mentored by
+                <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">
+                    Xin Tong</a> in the
+                <a href="http://msra.cn/zh-cn/connections/talents/joint-phd/default.aspx" target="_blank">
+                    Joint Ph.D. Program</a> with
+                <a href="http://research.microsoft.com/en-us/labs/asia/" target="_blank">
+                    Microsoft Research Asia</a>.
+            </p>
+
+            <p class="section_text">
+                I received my B.S. Degree in Automation and Second B.S. Degree in Economics from
+                <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
+                    Tsinghua University</a> in 2012.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-responsive" src="img/head.png" alt="My portrait" style="max-width:75%">
+        </div>
+    </div>
+    </div>
 </div>
 
 <div id="research" class="container">
     <hr>
-    <h2>Research Projects</h2>
+    <div class="section">
+    <h3 class="section_title">Research Projects</h3>
+
     <div class="box">
         <div class="row">
             <div class="col-sm-3">
@@ -109,9 +119,12 @@
                     <paper>Video-Audio Driven Real-Time Facial Animation</paper>
                     <author><b>Yilong Liu</b>, Feng Xu, Jinxiang Chai, Xin Tong, Lijuan Wang, Qiang Huo</author>
                     <conf>ACM Transactions on Graphics 2015 (SIGGRAPH Asia 2015).</conf>
-                    <a href="" class="btn">Project</a>
-                    <a href="" class="btn">Paper</a>
-                    <a href="" class="btn">Video</a>
+                    <div class="project_btnset">
+                        <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
+                        <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                        <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                        <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,9 +140,12 @@
                     <paper>Controllable High-Fidelity Facial Performance Transfer</paper>
                     <author>Feng Xu, Jinxiang Chai, <b>Yilong Liu</b>, Xin Tong</author>
                     <conf>ACM Transactions on Graphics, Vol. 33, No. 4, Article 42, 2014 (SIGGRAPH 2014).</conf>
-                    <a href="" class="btn">Project</a>
-                    <a href="" class="btn">Paper</a>
-                    <a href="" class="btn">Video</a>
+                    <div class="project_btnset">
+                    <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
+                    <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                    <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                    <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,47 +156,83 @@
         <div class="row">
             <div class="col-sm-3">
                 <div style="vertical-align: middle;">
-                <img class="img-responsive" src="img/11_mvs2.png">
-                    </div>
+                    <img class="img-responsive" src="img/11_mvs2.png">
+                </div>
             </div>
             <div class="col-sm-9">
                 <div class="info">
                     <paper>A Visual Hull Free Algorithm for Fast and Robust Multi-View Stereo</paper>
                     <author><b>Yilong Liu</b>, Yuanyuan Jiang, Yebin Liu</author>
                     <conf>IEEE International Conference on 3D Imaging (IC3D), 2011.</conf>
-                    <a href="" class="btn">Project</a>
-                    <a href="" class="btn">Paper</a>
-                    <a href="" class="btn">Video</a>
+                    <div class="project_btnset">
+                        <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
+                        <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                        <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                        <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 
 <div id="contact" class="container">
     <hr>
-    <h2>Contact</h2>
+    <div class="section">
+    <h3 class="section_title">Contact Me</h3>
+    <div class="row">
     <div class="col-md-6">
-        <ul>
-            <li class="contact"><span class="glyphicon glyphicon-envelope" /> v-yilliu@microsoft.com</li>
-            <li class="contact"><span class="glyphicon glyphicon-phone"/> (+86)-1512-0000-435</li>
-            <li class="contact"><span class="fa fa-skype"/> aaronlau33</li>
-            <li class="contact"><span class="glyphicon glyphicon-map-marker"/> Microsoft Tower 2, No.5 Danling Street</li>
-            <li class="contact"><moreline>Haidian District, Beijing, 100080, P.R.China</moreline></li>
-        </ul>
-        </div>
+        <table class="underline_grid">
+        <tbody>
+        <tr>
+            <td><span class="fa fa-envelope fa-fw"/></td>
+            <td>v-yilliu@microsoft.com</td>
+        </tr>
+        <tr>
+            <td><span class="fa fa-phone fa-fw"/></td>
+            <td>+86-15120000435</td>
+        </tr>
+        <tr>
+            <td><span class="fa fa-skype fa-fw"/></td>
+            <td>aaronlau33</td>
+        </tr>
+        <tr>
+            <td><span class="fa fa-map-marker fa-fw"/></td>
+            <td>Microsoft Tower 2, No.5 Danling Street</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Haidian District, Beijing, 100080, P.R.China</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
 
     <div class="col-md-6">
         <ul class="social-network social-circle">
-            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <br/><br/>
+            <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+            <li><a href="https://www.facebook.com/elonliu" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/ElonLiu89" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/+YilongLiu" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://cn.linkedin.com/in/yilongliu" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
         </ul>
+    </div>
+    </div>
     </div>
 </div>
 
+<footer class="footer">
+    <legend></legend>
+<div class="container" style="margin-top: 25px;">
+    <div class="row">
+        <p>
+            © Copyright 2015 by Yilong Liu. All Rights Reserved.
+            <span class="pull-right">Updated on Oct. 25, 2015</span></p>
+    </div>
+</div>
+</footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
