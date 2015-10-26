@@ -24,9 +24,13 @@
 
     <!-- Fixed-navbar adjustment -->
     <script>
-        var shiftWindow = function() { scrollBy(0, -50) };
+        var shiftWindow = function () {
+            scrollBy(0, -50)
+        };
         window.addEventListener("hashchange", shiftWindow);
-        function load() { if (window.location.hash) shiftWindow(); }
+        function load() {
+            if (window.location.hash) shiftWindow();
+        }
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -59,10 +63,12 @@
 <div class="jumbotron">
     <div class="container">
         <h1 class="header_title">Yilong Liu (刘一龙)</h1>
+
         <h2 class="header_subtitle">Ph.D. Student on Computer Graphics</h2>
+
         <div class="header_btnset">
-        <a href="#about" class="btn btn-info btn-lg">See More</a>
-        <a href="#contact" class="btn btn-success btn-lg">Contact Me</a>
+            <a href="#about" class="btn btn-info btn-lg">See More</a>
+            <a href="#contact" class="btn btn-success btn-lg">Contact Me</a>
         </div>
     </div>
 </div>
@@ -71,167 +77,283 @@
     <hr>
     <div class="section">
         <h3 class="section_title">About Me</h3>
-    <div class="row">
-        <div class="col-sm-8">
-            <p class="section_text">
-                I'm currently a Ph.D. student at
-                <a href="http://www.castu.tsinghua.edu.cn/publish/cas/index.html" target="_blank">
-                    the Institute for Advanced Study</a>,
-                <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
-                    Tsinghua University</a>.
-                I'm doing research in Computer Graphics, majorly focused on facial animation.
-                It's currently the fourth year of my Ph.D. career. My adviser is
-                <a href="http://research.microsoft.com/en-us/people/bainguo/default.aspx" target="_blank">
-                    Prof. Baining Guo</a>, and I'm mentored by
-                <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">
-                    Xin Tong</a> in the
-                <a href="http://msra.cn/zh-cn/connections/talents/joint-phd/default.aspx" target="_blank">
-                    Joint Ph.D. Program</a> with
-                <a href="http://research.microsoft.com/en-us/labs/asia/" target="_blank">
-                    Microsoft Research Asia</a>.
-            </p>
 
-            <p class="section_text">
-                I received my B.S. Degree in Automation and Second B.S. Degree in Economics from
-                <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
-                    Tsinghua University</a> in 2012.
-            </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <p class="section_text">
+                    I'm currently a Ph.D. student at
+                    <a href="http://www.castu.tsinghua.edu.cn/publish/cas/index.html" target="_blank">
+                        the Institute for Advanced Study</a>,
+                    <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
+                        Tsinghua University</a>.
+                    I'm doing research in Computer Graphics, majorly focused on facial animation.
+                    It's currently the fourth year of my Ph.D. career. My adviser is
+                    <a href="http://research.microsoft.com/en-us/people/bainguo/default.aspx" target="_blank">
+                        Prof. Baining Guo</a>, and I'm mentored by
+                    <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">
+                        Xin Tong</a> in the
+                    <a href="http://msra.cn/zh-cn/connections/talents/joint-phd/default.aspx" target="_blank">
+                        Joint Ph.D. Program</a> with
+                    <a href="http://research.microsoft.com/en-us/labs/asia/" target="_blank">
+                        Microsoft Research Asia</a>.
+                </p>
+
+                <p class="section_text">
+                    I received my B.S. Degree in Automation and Second B.S. Degree in Economics from
+                    <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">
+                        Tsinghua University</a> in 2012.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive" src="img/head.png" alt="My portrait" style="max-width:200px">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img class="img-responsive" src="img/head.png" alt="My portrait" style="max-width:75%">
-        </div>
-    </div>
     </div>
 </div>
 
 <div id="research" class="container">
     <hr>
     <div class="section">
-    <h3 class="section_title">Research Projects</h3>
+        <h3 class="section_title">Research Projects</h3>
 
-    <div class="box">
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="img-responsive" src="img/15_audiovideo.jpg">
-            </div>
-            <div class="col-sm-9">
-                <div class="info">
-                    <paper>Video-Audio Driven Real-Time Facial Animation</paper>
-                    <author><b>Yilong Liu</b>, Feng Xu, Jinxiang Chai, Xin Tong, Lijuan Wang, Qiang Huo</author>
-                    <conf>ACM Transactions on Graphics 2015 (SIGGRAPH Asia 2015).</conf>
-                    <div class="project_btnset">
-                        <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
-                        <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
-                        <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
-                        <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+        <div class="box">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="img/15_audiovideo.jpg">
+                </div>
+                <div class="col-sm-9">
+                    <div class="info">
+                        <paper>Video-Audio Driven Real-Time Facial Animation</paper>
+                        <author><b>Yilong Liu</b>,
+                            <a href="http://cgcad.thss.tsinghua.edu.cn/xufeng/" target="_blank">Feng Xu</a>,
+                            <a href="http://faculty.cs.tamu.edu/jchai/" target="_blank">Jinxiang Chai</a>,
+                            <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">Xin
+                                Tong</a>,
+                            <a href="">Lijuan Wang</a>,
+                            <a href="http://research.microsoft.com/en-us/people/qianghuo/" target="_blank">Qiang Huo</a>
+                        </author>
+                        <conf>ACM Transactions on Graphics 2015 (SIGGRAPH Asia 2015).</conf>
+                        <div class="project_btnset">
+                            <a href="" class="btn disabled" title="Project Page"><span
+                                    class="glyphicon glyphicon-home"/> </a>
+                            <a href="http://cgcad.thss.tsinghua.edu.cn/xufeng/cameraReady_sigAsia15.pdf" class="btn"
+                               title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                            <a href="http://cgcad.thss.tsinghua.edu.cn/xufeng/cameraReady_sigAsia15.avi" class="btn"
+                               title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                            <a href="" class="btn" title="Bibtex" data-toggle="modal" data-target="#bib_sa15_av"><span
+                                    class="glyphicon glyphicon-edit"/> </a>
+                            <!-- Modal -->
+                            <div id="bib_sa15_av" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Bibtex</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="bib_fmt">
+                                                To appear.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="box">
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="img-responsive" src="img/14_controllable.png">
-            </div>
-            <div class="col-sm-9">
-                <div class="info">
-                    <paper>Controllable High-Fidelity Facial Performance Transfer</paper>
-                    <author>Feng Xu, Jinxiang Chai, <b>Yilong Liu</b>, Xin Tong</author>
-                    <conf>ACM Transactions on Graphics, Vol. 33, No. 4, Article 42, 2014 (SIGGRAPH 2014).</conf>
-                    <div class="project_btnset">
-                    <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
-                    <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
-                    <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
-                    <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+        <div class="box">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="img/14_controllable.png">
+                </div>
+                <div class="col-sm-9">
+                    <div class="info">
+                        <paper>Controllable High-Fidelity Facial Performance Transfer</paper>
+                        <author>
+                            <a href="http://cgcad.thss.tsinghua.edu.cn/xufeng/" target="_blank">Feng Xu</a>,
+                            <a href="http://faculty.cs.tamu.edu/jchai/" target="_blank">Jinxiang Chai</a>,
+                            <b>Yilong Liu</b>,
+                            <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">Xin
+                                Tong</a></author>
+                        <conf>ACM Transactions on Graphics, Vol. 33, No. 4, Article 42, 2014 (SIGGRAPH 2014).</conf>
+                        <div class="project_btnset">
+                            <a href="http://research.microsoft.com/apps/video/default.aspx?id=226501" class="btn"
+                               title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
+                            <a href="http://faculty.cs.tamu.edu/jchai/projects/siggraph14-face/face-retargeting.pdf"
+                               class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                            <a href="http://msrvideo.vo.msecnd.net/rmcvideos/226501/226501.mp4" class="btn"
+                               title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                            <a href="" class="btn" title="Bibtex" data-toggle="modal" data-target="#bib_s14_ct"><span
+                                    class="glyphicon glyphicon-edit"/> </a>
+                            <!-- Modal -->
+                            <div id="bib_s14_ct" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Bibtex</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="bib_fmt">
+                                                @article{Xu:2014:CHF:2601097.2601210,
+                                                author = {Xu, Feng and Chai, Jinxiang and Liu, Yilong and Tong, Xin},
+                                                title = {Controllable High-fidelity Facial Performance Transfer},
+                                                journal = {ACM Trans. Graph.},
+                                                issue_date = {July 2014},
+                                                volume = {33},
+                                                number = {4},
+                                                month = jul,
+                                                year = {2014},
+                                                issn = {0730-0301},
+                                                pages = {42:1--42:11},
+                                                articleno = {42},
+                                                numpages = {11},
+                                                url = {http://doi.acm.org/10.1145/2601097.2601210},
+                                                doi = {10.1145/2601097.2601210},
+                                                acmid = {2601210},
+                                                publisher = {ACM},
+                                                address = {New York, NY, USA},
+                                                keywords = {blendshape interpolation, deformation transfer and editing,
+                                                facial animation, motion retargeting},
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="box">
-        <div class="row">
-            <div class="col-sm-3">
-                <div style="vertical-align: middle;">
-                    <img class="img-responsive" src="img/11_mvs2.png">
+        <div class="box">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div style="vertical-align: middle;">
+                        <img class="img-responsive" src="img/11_mvs2.png">
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-9">
-                <div class="info">
-                    <paper>A Visual Hull Free Algorithm for Fast and Robust Multi-View Stereo</paper>
-                    <author><b>Yilong Liu</b>, Yuanyuan Jiang, Yebin Liu</author>
-                    <conf>IEEE International Conference on 3D Imaging (IC3D), 2011.</conf>
-                    <div class="project_btnset">
-                        <a href="" class="btn" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
-                        <a href="" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
-                        <a href="" class="btn" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
-                        <a href="" class="btn" title="Bibtex"><span class="glyphicon glyphicon-edit"/> </a>
+                <div class="col-sm-9">
+                    <div class="info">
+                        <paper>A Visual Hull Free Algorithm for Fast and Robust Multi-View Stereo</paper>
+                        <author><b>Yilong Liu</b>,
+                            <a href="http://www.divms.uiowa.edu/~yuanyjiang/" target="_blank">Yuanyuan Jiang</a>,
+                            <a href="http://media.au.tsinghua.edu.cn/liuyebin.jsp" target="_blank">Yebin Liu</a>
+                        </author>
+                        <conf>IEEE International Conference on 3D Imaging (IC3D), 2011.</conf>
+                        <div class="project_btnset">
+                            <a href="" class="btn disabled" title="Project Page"><span class="glyphicon glyphicon-home"/> </a>
+                            <a href="data/ic3d2011_VHFMVS.pdf" class="btn" title="Paper"><span class="glyphicon glyphicon-file"/> </a>
+                            <a href="" class="btn disabled" title="Demo Video"><span class="glyphicon glyphicon-film"/> </a>
+                            <a href="" class="btn" title="Bibtex" data-toggle="modal" data-target="#bib_ic3d"><span
+                                    class="glyphicon glyphicon-edit"/> </a>
+                            <!-- Modal -->
+                            <div id="bib_ic3d" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Bibtex</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="bib_fmt">
+                                                @INPROCEEDINGS{Liu2011,
+                                                author={Yilong Liu and Yuanyuan Jiang and Yebin Liu},
+                                                booktitle={3D Imaging (IC3D), 2011 International Conference on},
+                                                title={A visual hull free algorithm for fast and robust multi-view stereo},
+                                                year={2011},
+                                                pages={1-4},
+                                                keywords={image reconstruction;stereo image processing;image based multi-view reconstruction system;point cloud generation;precise 3D model;robust multiview stereo;visual hull free algorithm;watertight 3D model;Computational modeling;Educational institutions;Image reconstruction;Octrees;Robustness;Visualization;MVS;multi-view stereo;point cloud;visual hull free},
+                                                doi={10.1109/IC3D.2011.6584375},
+                                                month={Dec},
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </div>
 
 <div id="contact" class="container">
     <hr>
     <div class="section">
-    <h3 class="section_title">Contact Me</h3>
-    <div class="row">
-    <div class="col-md-6">
-        <table class="underline_grid">
-        <tbody>
-        <tr>
-            <td><span class="fa fa-envelope fa-fw"/></td>
-            <td>v-yilliu@microsoft.com</td>
-        </tr>
-        <tr>
-            <td><span class="fa fa-phone fa-fw"/></td>
-            <td>+86-15120000435</td>
-        </tr>
-        <tr>
-            <td><span class="fa fa-skype fa-fw"/></td>
-            <td>aaronlau33</td>
-        </tr>
-        <tr>
-            <td><span class="fa fa-map-marker fa-fw"/></td>
-            <td>Microsoft Tower 2, No.5 Danling Street</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Haidian District, Beijing, 100080, P.R.China</td>
-        </tr>
-        </tbody>
-        </table>
-    </div>
+        <h3 class="section_title">Contact Me</h3>
 
-    <div class="col-md-6">
-        <ul class="social-network social-circle">
-            <br/><br/>
-            <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
-            <li><a href="https://www.facebook.com/elonliu" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/ElonLiu89" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://plus.google.com/+YilongLiu" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="https://cn.linkedin.com/in/yilongliu" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-    </div>
-    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="underline_grid">
+                    <tbody>
+                    <tr>
+                        <td><span class="fa fa-envelope fa-fw"/></td>
+                        <td>v-yilliu@microsoft.com</td>
+                    </tr>
+                    <tr>
+                        <td><span class="fa fa-phone fa-fw"/></td>
+                        <td>+86-15120000435</td>
+                    </tr>
+                    <tr>
+                        <td><span class="fa fa-skype fa-fw"/></td>
+                        <td>aaronlau33</td>
+                    </tr>
+                    <tr>
+                        <td><span class="fa fa-map-marker fa-fw"/></td>
+                        <td>Microsoft Tower 2, No.5 Danling Street</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Haidian District, Beijing, 100080, P.R.China</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="social-network social-circle">
+                    <br/><br/>
+                    <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+                    <li><a href="https://www.facebook.com/elonliu" target="_blank" class="icoFacebook" title="Facebook"><i
+                            class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/ElonLiu89" target="_blank" class="icoTwitter" title="Twitter"><i
+                            class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/+YilongLiu" target="_blank" class="icoGoogle" title="Google +"><i
+                            class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://cn.linkedin.com/in/yilongliu" target="_blank" class="icoLinkedin"
+                           title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <footer class="footer">
-    <legend></legend>
-<div class="container" style="margin-top: 25px;">
-    <div class="row">
-        <p>
-            © Copyright 2015 by Yilong Liu. All Rights Reserved.
-            <span class="pull-right">Updated on Oct. 25, 2015</span></p>
+    <hr/>
+    <div class="container" style="margin-top: 25px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Updated on Oct. 25, 2015</p>
+            </div>
+            <div class="col-sm-8">
+                <p style="text-align: right">© Copyright 2015 by Yilong Liu. All Rights Reserved.</p>
+            </div>
+        </div>
     </div>
-</div>
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

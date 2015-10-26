@@ -10,6 +10,7 @@ ul.social-network {
 	display: inline;
 	margin-left:0 !important;
 	padding: 0;
+	alignment: center;
 }
 ul.social-network li {
 	display: inline;
